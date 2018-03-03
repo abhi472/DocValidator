@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="intro_button">#c3c8cd</color>
+    <color name="foundersprime">#000</color>
+    <color name="view">#c3c8cd</color>
+    <color name="tomato">#790F1A</color>
+    <color name="white">#fff</color>
+    <color name="button_color_1">#FF291A</color>
+    <color name="cardview_light_background2">#F2F2F4</color>
+    <color name="colorWhite">#fff</color>
+    <color name="black">#000</color>
+    <color name="translucent">#80000000</color>
+    <color name="trans_tomato">#50ef5138</color>
+    <color name="opacity60">#99000000</color>
+    <color name="opacity75">#BF212121</color>
+    <color name="opacity75black">#BF000000</color>
+
+    <color name="project_grey">#c3c8cd</color>
+    <color name="project_grey_dark">#616161</color>
+    <color name="bannerOpacity">#80000000</color>
+    <color name="hint">#808080</color>
+    <color name="light_tomato">#FFEBEE</color>
+    <color name="light_green">#E8F5E9</color>
+    <color name="light_blue">#E3F2FD</color>
+    <color name="primary_text_dark">#808080</color>
+    <color name="project_grey_light">#eeeeee</color>
+    <color name="unselected">#9E9E9E</color>
+    <color name="textbox">#212121</color>
+
+
+    <color name="nav_back_color">#F5F5F5</color>
+    <color name="vvs">#7e0000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="blue">#0D47A1</color>
+    <color name="teal">#4DB6AC</color>
+    <color name="project_grey_extra_dark">#212121</color>
+    <color name="maroon">#790F1A</color>
+    <color name="tomato3">#790F1A</color>
+    <color name="spazer_text_color">#FF6D89AF</color>
+    <color name="chevron_default_background">#FFE1EDFF</color>
+    <color name="spazer_blue">#4696d2</color>
+</resources>

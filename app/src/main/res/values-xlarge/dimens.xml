@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="salut_text_size">36sp</dimen>
+    <dimen name="edit_text_text_size_login">24sp</dimen>
+    <dimen name="dialog_header_text_size">24sp</dimen>
+    <dimen name="xregular_textSize">18sp</dimen>
+    <dimen name="bottom_card_text_size">16sp</dimen>
+    <dimen name="large_text_size">32sp</dimen>
+    <dimen name="default_text_size">20sp</dimen>
+    <dimen name="regular_size_custom">18sp</dimen>
+
+</resources>

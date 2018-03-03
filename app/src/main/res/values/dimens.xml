@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_card_width">550dp</dimen>
+    <dimen name="bottom_card_height">800dp</dimen>
+    <dimen name="bottom_card_top_margin">181dp</dimen>
+    <dimen name="bottom_card_bottom_padding">16dp</dimen>
+    <dimen name="cards_elevation">20dp</dimen>
+    <dimen name="drawable_padding_login">16dp</dimen>
+    <dimen name="top_card_left_margin">60dp</dimen>
+    <dimen name="top_card_right_margin">60dp</dimen>
+    <dimen name="top_card_top_margin">50dp</dimen>
+    <dimen name="login_logo_dimen">400dp</dimen>
+    <dimen name="top_card_bottom_margin">55dp</dimen>
+    <dimen name="edit_text_width_login">327dp</dimen>
+    <dimen name="edit_text_height_login">70dp</dimen>
+    <dimen name="edit_text_top_margin">40dp</dimen>
+    <dimen name="next_button_top_margin_login">30dp</dimen>
+    <dimen name="chevron_background_height">75dp</dimen>
+    <dimen name="chevron_background_width">100dp</dimen>
+    <dimen name="top_card_bottom_padding_view">50dp</dimen>
+    <dimen name="top_card_height">640dp</dimen>
+    <dimen name="top_card_width">650dp</dimen>
+    <dimen name="image_top_margin_login">40dp</dimen>
+    <dimen name="salut_margin_top_login">36dp</dimen>
+    <dimen name="dialog_header_content_margin">36dp</dimen>
+
+
+    <!--signin screen-->
+    <dimen name="signin_logo_size">100dp</dimen>
+    <dimen name="signin_card_width">650dp</dimen>
+    <dimen name="signin_card_height">886dp</dimen>
+    <dimen name="signin_top_card_margin" />
+    <dimen name="purpose_card_height">80dp</dimen>
+    <dimen name="purpose_card_margin">10dp</dimen>
+    <dimen name="radius">250dp</dimen>
+    <dimen name="camera_focus_radius">504dp</dimen>
+    <dimen name="camera_activity_click_button_bottom_margin">200dp</dimen>
+    <dimen name="camera_next_top_margin">800dp</dimen>
+    <dimen name="kyc_screen_overlay_left_margin">135dp</dimen>
+    <dimen name="kyc_screen_overlay_top_margin">312dp</dimen>
+    <dimen name="kyc_screen_overlay_width">500dp</dimen>
+    <dimen name="kyc_screen_overlay_height">400dp</dimen>
+    <dimen name="camera_overlay_margin_top">200dp</dimen>
+    <dimen name="assistance_decor_width">270dp</dimen>
+    <dimen name="assistance_decor_height">210dp</dimen>
+    <dimen name="edit_text_text_padding">24dp</dimen>
+    <dimen name="chevron_back">50dp</dimen>
+    <dimen name="horizontal_margin">24dp</dimen>
+    <dimen name="regular_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin_half">8dp</dimen>
+    <dimen name="activity_horizontal_margin2">32dp</dimen>
+    <dimen name="kyc_screen_text_top_margin" />
+    <dimen name="tendips">10dp</dimen>
+    <dimen name="pdf_height">1871dp</dimen>
+    <dimen name="pdf_width">1322dp</dimen>
+    <dimen name="pdf_permissible_height_offset">32dp</dimen>
+    <dimen name="pdf_permissible_header_offset">40dp</dimen>
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Spazer</string>
+    <string name="logo">logo</string>
+    <string name="enter_contact_number">Enter Mobile</string>
+    <string name="next_button">next button</string>
+    <string name="check_out">Check Out</string>
+    <string name="delivery">Delivery</string>
+    <string name="assistance">Assistance</string>
+    <string name="powered_by_spazer">Powered By Spazer>></string>
+    <string name="salutation_text">Hello!</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="resend">Resend</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="purpose_text">Purpose of Visit</string>
+    <string name="take_picture">take picture</string>
+    <string name="nda_text">NDA</string>
+    <string name="invalid_code">Invalid Code</string>
+    <string name="delivery_text">Delivery</string>
+    <string name="visiting_card_question_text">Who are you visiting?</string>
+    <string name="enter_host_name_number">Enter Host Name/Number</string>
+    <string name="who_is_the_delivery_for">Who is this delivery for?</string>
+    <string name="assistance_text">Assistance</string>
+    <string name="the_concerned_person_has_been_notified_of_your_arrival_nplease_wait">Someone will attend to you shortly!</string>
+    <string name="required">Required Field</string>
+    <string name="prev_page">Previous page</string>
+    <string name="sign_here">Sign Here</string>
+    <string name="clear">Clear</string>
+    <string name="welcome_salutation_text">Welcome !</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="request_permission">You can\'t use the app without enabling the permissions!</string>
+    <string name="camera_error">Camera not supported</string>
+    <string name="sign_out_text">Sign Out</string>
+    <string name="oops">Oops!</string>
+    <string name="facing_issue">We\'re Currently facing some issues Please try again Later</string>
+    <string name="okay">Okay</string>
+    <string name="code_expired">Authentication Error</string>
+    <string name="delivery_host_notif">The concerned person has been notified.\nPlease Wait, Thank you</string>
+    <string name="please_hold_your_photoid_inside_the_box">Please hold your PhotoID inside the box</string>
+    <string name="enter_host_name">Enter Host Name</string>
+    <string name="crap2">dadsa</string>
+    <string name="please_enter_the_otp_sent_to">Please enter the OTP sent to</string>
+    <string name="check_out_prompt">You are already signed in please checkout first</string>
+    <string name="resend_call">Call me !</string>
+    <string name="enter_your_device_code_to_connect_to_this_device">Enter your device code to connect to this device</string>
+    <string name="timeout">Connection time out !</string>
+    <string name="not_connected">You\'re not connected to the internet !</string>
+    <string name="retry">Retry</string>
+    <string name="pre_wel_text"></string>
+    <string name="let_s_get_started">Let\'s get started!</string>
+    <string name="not_supported">You need to update the app to continue</string>
+    <string name="who_are_you_visiting">Who are you visiting?</string>
+    <string name="enter_mobile">Enter phone number</string>
+</resources>

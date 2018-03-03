@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--login screen dimen-->
+    <dimen name="bottom_card_width">430dp</dimen>
+    <dimen name="bottom_card_height">653dp</dimen>
+    <dimen name="bottom_card_top_margin">140dp</dimen>
+    <dimen name="bottom_card_bottom_padding">14dp</dimen>
+    <dimen name="cards_elevation">20dp</dimen>
+    <dimen name="drawable_padding_login">14dp</dimen>
+    <dimen name="top_card_left_margin">47dp</dimen>
+    <dimen name="top_card_right_margin">47dp</dimen>
+    <dimen name="top_card_top_margin">42dp</dimen>
+    <dimen name="login_logo_dimen">300dp</dimen>
+    <dimen name="edit_text_width_login">256dp</dimen>
+    <dimen name="edit_text_height_login">61dp</dimen>
+    <dimen name="edit_text_top_margin">31dp</dimen>
+    <dimen name="next_button_top_margin_login">25dp</dimen>
+    <dimen name="chevron_background_height">65dp</dimen>
+    <dimen name="chevron_background_width">78dp</dimen>
+    <dimen name="top_card_height">653dp</dimen>
+    <dimen name="top_card_width">508dp</dimen>
+    <dimen name="image_top_margin_login">42dp</dimen>
+    <dimen name="salut_margin_top_login">28dp</dimen>
+    <dimen name="edit_text_container_width_login">307dp</dimen>
+
+    <dimen name="nda_main_width">600dp</dimen>
+    <dimen name="nda_main_height">960dp</dimen>
+
+
+
+
+    <!--regular dimen-->
+
+
+    <!--signin screen-->
+    <dimen name="signin_logo_size">80dp</dimen>
+    <dimen name="signin_card_width">508dp</dimen>
+    <dimen name="signin_card_height">745dp</dimen>
+    <dimen name="signin_top_card_margin">47dp</dimen>
+
+    <!--otp dialog-->
+    <dimen name="dialog_size">500dp</dimen>
+
+    <!--purpose page-->
+    <dimen name="purpose_card_height">80dp</dimen>
+    <dimen name="purpose_card_margin">10dp</dimen>
+
+    <!--camera activity-->
+    <dimen name="camera_focus_radius">217dp</dimen>
+    <dimen name="camera_activity_click_button_bottom_margin">94dp</dimen>
+    <dimen name="camera_next_top_margin">752dp</dimen>
+    <dimen name="camera_overlay_margin_top">188dp</dimen>
+
+    <!--kyc screen-->
+    <dimen name="kyc_screen_overlay_left_margin">70dp</dimen>
+    <dimen name="kyc_screen_overlay_top_margin">195dp</dimen>
+    <dimen name="kyc_screen_overlay_width">260dp</dimen>
+    <dimen name="kyc_screen_overlay_height">250dp</dimen>
+    <dimen name="kyc_screen_text_top_margin">170dp</dimen>
+
+
+    <dimen name="assistance_decor_width">211dp</dimen>
+    <dimen name="assistance_decor_height">197dp</dimen>
+
+
+
+
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dialog_size"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/enter_mobile"
+            android:textColor="#ef5138"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/header"
+            android:layout_margin="@dimen/activity_horizontal_margin_half"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin2"
+            android:layout_marginRight="@dimen/activity_horizontal_margin2"
+            android:background="#d2d2d2" />
+
+        <EditText
+            android:id="@+id/contact"
+            style="@style/TextStyle.Regular"
+            android:layout_width="@dimen/edit_text_width_login"
+            android:layout_height="@dimen/edit_text_height_login"
+            android:layout_below="@+id/v1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/regular_margin"
+            android:background="@drawable/edit_text_card"
+            android:gravity="center"
+            android:hint="@string/enter_contact_number"
+            android:inputType="phone" />
+
+
+        <Button
+            android:id="@+id/okay"
+            style="@style/TextStyle.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/button_back"
+            android:paddingBottom="@dimen/regular_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin2"
+            android:paddingStart="@dimen/activity_horizontal_margin2"
+            android:paddingTop="@dimen/regular_margin"
+            android:text="@string/okay"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+</LinearLayout>
