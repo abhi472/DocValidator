@@ -71,7 +71,7 @@ public class KycPresenter<V extends KycMvpView> extends BasePresenter<V>
 
             Observable<VisionResponse> mapObservable = observable
                     .flatMap(jsonObject -> getDataManager()
-                            .getVisionResponse("AIzaSyB5Zq1CDnrqZYf1EJ_fu9ldxWiiljlqAlU",
+                            .getVisionResponse("",
                                     jsonObject));
 
             getCompositeDisposable()
