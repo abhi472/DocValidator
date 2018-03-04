@@ -24,11 +24,18 @@ import com.google.gson.JsonParser;
 
 import java.io.File;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 import javax.inject.Inject;
 
+import io.reactivex.Observable;
+import io.reactivex.ObservableSource;
+import io.reactivex.Scheduler;
+import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.functions.Consumer;
+import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
 /**
@@ -51,72 +58,59 @@ public class KycPresenter<V extends KycMvpView> extends BasePresenter<V>
         if (getMvpView().isNetworkConnected()) {
 
             this.file = file;
-            new ImageRunner().execute(file.getAbsolutePath());
-        } else {
-            getMvpView().onError(R.string.not_connected,
-                    0);
-        }
+            String filePath = file.getAbsolutePath();
 
 
-    }
-
-    class ImageRunner extends AsyncTask<String, String, String> {
-
-
-        @Override
-        protected String doInBackground(String... params) {
-            byte[] bytes = BaseUtils.readBytesFromFile(params[0]);
-            return Base64.encodeToString(bytes, Base64.DEFAULT);
-
-        }
-
-
-        @Override
-        protected void onPostExecute(String result) {
-            startApiCall(result);
-        }
-
-
-        @Override
-        protected void onPreExecute() {
             getMvpView().showLoading();
+
+            Observable<JsonObject> observable = Observable.fromCallable(() -> {
+                byte[] bytes = BaseUtils.readBytesFromFile(filePath);
+                return Base64.encodeToString(bytes, Base64.DEFAULT);
+            }).map(this::startApiCall).subscribeOn(Schedulers.io());
+
+
+            Observable<VisionResponse> mapObservable = observable
+                    .flatMap(jsonObject -> getDataManager()
+                            .getVisionResponse("AIzaSyB5Zq1CDnrqZYf1EJ_fu9ldxWiiljlqAlU",
+                                    jsonObject));
+
+            getCompositeDisposable()
+                    .add(mapObservable.observeOn(AndroidSchedulers.mainThread())
+                            .subscribeOn(Schedulers.io())
+                            .subscribe(visionResponse -> {
+                                if (isValid(visionResponse)) {
+                                    getMvpView().hideLoading();
+                                    getMvpView().showSuccess();
+                                    getMvpView().enableButton();
+                                } else {
+
+                                    getMvpView().hideLoading();
+                                    getMvpView().enableButton();
+                                    getMvpView().onError("Please use a valid Photo ID", 0);
+
+                                }
+                            }, throwable -> {
+                                getMvpView().hideLoading();
+                                getMvpView().enableButton();
+                                getMvpView()
+                                        .onError("we're facing issues with content upload" +
+                                                        "\nPlease try again",
+                                                0);
+                            })
+                    );
+
+
         }
-
-
     }
 
-    private void startApiCall(String result) {
+
+    private JsonObject startApiCall(String result) {
         String json = "{\"requests\"" +
                 ":[{\"image\":{\"content\":\""
                 + result + "\"},\"features\":" +
                 "[{\"type\": \"LABEL_DETECTION\", \"maxResults\": 10}]}]}";
-        JsonObject jsonObject = (new JsonParser()).parse(json).getAsJsonObject();
-        getCompositeDisposable()
-                .add(getDataManager()
-                        .getVisionResponse("AIzaSyB5Zq1CDnrqZYf1EJ_fu9ldxWiiljlqAlU",
-                                jsonObject)
-                        .observeOn(AndroidSchedulers.mainThread())
-                        .subscribeOn(Schedulers.io())
-                        .subscribe(visionResponse -> {
-                            if (isValid(visionResponse)) {
-                                getMvpView().hideLoading();
-                                getMvpView().showSuccess();
-                            } else {
+        return (new JsonParser()).parse(json).getAsJsonObject();
 
-                                getMvpView().hideLoading();
-                                getMvpView().enableButton();
-                                getMvpView().onError("Please use a valid Photo ID", 0);
-
-                            }
-                        }, throwable -> {
-                            getMvpView().hideLoading();
-                            getMvpView().enableButton();
-                            getMvpView()
-                                    .onError("we're facing issues with content upload" +
-                                                    "\nPlease try again",
-                                            0);
-                        })
-                );
 
     }
 

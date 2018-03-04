@@ -83,10 +83,6 @@ public class KycActivity extends BaseActivity implements KycMvpView {
     AutoFitTextureView texture;
     @BindView(R.id.btn_takepicture)
     ImageButton btnTakepicture;
-    @BindView(R.id.powered)
-    TextView powered;
-    @BindView(R.id.back)
-    ImageView back;
 
 
     @Override
@@ -107,10 +103,6 @@ public class KycActivity extends BaseActivity implements KycMvpView {
             btnTakepicture.setEnabled(false);
 
             mCameraSource.takePicture(null, callback);
-        });
-
-        back.setOnClickListener(view -> {
-            mPresenter.onBackClick();
         });
 
 
@@ -436,7 +428,7 @@ public class KycActivity extends BaseActivity implements KycMvpView {
 
     @Override
     public void showSuccess() {
-        Toast.makeText(this, "upload successful", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Document is valid", Toast.LENGTH_SHORT).show();
     }
 
     public void setNumber(String s) {

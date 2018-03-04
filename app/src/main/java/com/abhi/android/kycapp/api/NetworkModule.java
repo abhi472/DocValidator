@@ -2,10 +2,12 @@ package com.abhi.android.kycapp.api;
 
 
 import com.abhi.android.kycapp.BuildConfig;
+import com.facebook.stetho.okhttp3.StethoInterceptor;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
+import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -40,13 +42,13 @@ public class NetworkModule {
 
     Retrofit priovideVisionCall() {
 
-//        OkHttpClient okHttpClient = new OkHttpClient.Builder()
-//                .addNetworkInterceptor(new StethoInterceptor())
-//                .build();
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .addNetworkInterceptor(new StethoInterceptor())
+                .build();
 
         return new Retrofit.Builder()
                 .baseUrl("https://vision.googleapis.com/")
-             //   .client(okHttpClient)
+                .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

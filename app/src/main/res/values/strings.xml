@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Spazer</string>
+    <string name="app_name">Doc Validator</string>
     <string name="logo">logo</string>
     <string name="enter_contact_number">Enter Mobile</string>
     <string name="next_button">next button</string>

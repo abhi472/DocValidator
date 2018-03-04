@@ -51,29 +51,6 @@
 
 
     <TextView
-        android:id="@+id/powered"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/powered_by_spazer"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="20dp"
-        android:textSize="16sp"
-        android:textColor="@color/spazer_text_color"
-        style="@style/TextStyle.Regular"
-
-        />
-
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="@dimen/chevron_back"
-        android:layout_height="@dimen/chevron_back"
-        android:layout_margin="25dp"
-        android:background="@drawable/chevron_left"
-        android:backgroundTint="@color/white"
-        android:contentDescription="@string/prev_page"
-        />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/kyc_screen_overlay_left_margin"
